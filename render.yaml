@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: dashboard-quimica # Puedes cambiar este nombre
+    name: q1 # Puedes cambiar este nombre
     runtime: python
     buildCommand: "pip install -r requirements.txt"
     startCommand: "gunicorn q1:server"
