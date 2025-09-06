@@ -1,6 +1,5 @@
 import dash
-import dash_core_components as dcc
-import dash_html_components as html
+from dash import dcc, html, Input, Output, callback_context
 import plotly.express as px
 import pandas as pd
 
@@ -36,4 +35,5 @@ app.layout = html.Div(children=[
 
 # Ejecutar la aplicación (solo para desarrollo local)
 if __name__ == '__main__':
+
     app.run_server(debug=False)
