@@ -2,6 +2,10 @@ services:
   - type: web
     name: dashboard-quimica
     runtime: python
+    # ¡Esta es la línea que faltaba!
+    # Especifica que tus archivos están en la carpeta 'p2'.
+    rootDir: p2
     buildCommand: "pip install -r requirements.txt"
     startCommand: "gunicorn q1:server"
-    plan: free # Añadimos el plan para ser más explícitos
+    # Es buena práctica especificar el plan también.
+    plan: free
