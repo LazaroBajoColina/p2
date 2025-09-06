@@ -1,6 +1,7 @@
 services:
   - type: web
-    name: q1
+    name: dashboard-quimica
     runtime: python
     buildCommand: "pip install -r requirements.txt"
     startCommand: "gunicorn q1:server"
+    plan: free # Añadimos el plan para ser más explícitos
