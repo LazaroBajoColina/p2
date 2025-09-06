@@ -36,4 +36,4 @@ app.layout = html.Div(children=[
 # Ejecutar la aplicación (solo para desarrollo local)
 if __name__ == '__main__':
 
-    app.run_server(debug=False)
+    app.run(debug=False)
